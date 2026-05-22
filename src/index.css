@@ -1,0 +1,56 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom heatmap colors */
+.react-calendar-heatmap .color-empty {
+    fill: #eeeeee; /* Gray for inactive days */
+  }
+  
+  .react-calendar-heatmap .color-green {
+    fill: #10b981; /* Green for active days */
+  }
+
+  @keyframes zoom-in {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .animate-zoom-in {
+    animation: zoom-in 1s ease-out;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 1.5s ease-in;
+  }
+  
+  @keyframes slide-in-right {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .animate-slide-in-right {
+    animation: slide-in-right 1s ease-out;
+  }
